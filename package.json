@@ -5,6 +5,10 @@
   "main": "./src/index.js",
   "browser": "./lib/index.umd.js",
   "type": "module",
+  "files": [
+    "lib/",
+    "src/"
+  ],
   "keywords": [
     "marked",
     "extension"
