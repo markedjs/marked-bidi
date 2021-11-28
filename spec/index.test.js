@@ -1,18 +1,28 @@
 import { marked } from 'marked';
-import thisExtension from '../src/index.js';
+import markedBidi from '../src/index.js';
 
 describe('this-extension', () => {
   beforeEach(() => {
     marked.setOptions(marked.getDefaults());
   });
 
-  test('no options', () => {
-    marked.use(thisExtension());
-    expect(marked('example markdown')).toBe('<p>example html</p>\n');
+  test('paragraph', () => {
+    marked.use(markedBidi());
+    expect(marked('راست left')).toBe('<p dir="auto">راست left</p>\n');
   });
 
-  test('markdown not using this extension', () => {
-    marked.use(thisExtension());
-    expect(marked('not example markdown')).not.toBe('<p>example html</p>\n');
+  test('heading', () => {
+    marked.use(markedBidi());
+    expect(marked('# راست left')).toBe('<h1 dir="auto" id="راست-left">راست left</h1>\n');
+  });
+
+  test('unordered list', () => {
+    marked.use(markedBidi());
+    expect(marked('- راست left')).toBe('<ul dir="auto">\n<li>راست left</li>\n</ul>\n');
+  });
+
+  test('ordered list', () => {
+    marked.use(markedBidi());
+    expect(marked('1. راست left')).toBe('<ol dir="auto">\n<li>راست left</li>\n</ol>\n');
   });
 });

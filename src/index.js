@@ -1,23 +1,21 @@
-export default function(options = {}) {
-  // extension code here
+import { marked } from 'marked';
 
+export default function() {
   return {
-    tokenizer: {
-      paragraph(src) {
-        if (src !== 'example markdown') {
-          return false;
-        }
+    renderer: {
+      heading(...args) {
+        const html = marked.Renderer.prototype.heading.call(this, ...args);
+        return html.replace(/^<(h\d)/, '<$1 dir="auto"');
+      },
 
-        const token = {
-          type: 'paragraph',
-          raw: src,
-          text: 'example html',
-          tokens: []
-        };
+      list(...args) {
+        const html = marked.Renderer.prototype.list.call(this, ...args);
+        return html.replace(/^<(ol|ul)/, '<$1 dir="auto"');
+      },
 
-        this.lexer.inline(token.text, token.tokens);
-
-        return token;
+      paragraph(...args) {
+        const html = marked.Renderer.prototype.paragraph.call(this, ...args);
+        return html.replace(/^<p/, '<p dir="auto"');
       }
     }
   };
