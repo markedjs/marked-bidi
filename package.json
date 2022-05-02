@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/markedjs/marked-bidi#readme",
   "peerDependencies": {
-    "marked": "^4.0.14"
+    "marked": "^4.0.15"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
@@ -57,7 +57,7 @@
     "eslint-plugin-n": "^15.2.0",
     "eslint-plugin-promise": "^6.0.0",
     "jest-cli": "^28.0.0",
-    "marked": "^4.0.14",
+    "marked": "^4.0.15",
     "rollup": "^2.71.1",
     "semantic-release": "^19.0.2"
   }
