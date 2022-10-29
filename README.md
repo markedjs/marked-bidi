@@ -5,7 +5,7 @@ Add Bidirectional text support to the HTML
 # Usage
 
 ```js
-import marked from "marked";
+import {marked} from "marked";
 import markedBidi from "marked-bidi";
 
 // or UMD script
