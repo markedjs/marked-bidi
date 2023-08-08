@@ -13,7 +13,7 @@ describe('this-extension', () => {
 
   test('heading', () => {
     marked.use(markedBidi());
-    expect(marked('# راست left')).toBe('<h1 dir="auto" id="راست-left">راست left</h1>\n');
+    expect(marked('# راست left')).toBe('<h1 dir="auto">راست left</h1>\n');
   });
 
   test('unordered list', () => {
