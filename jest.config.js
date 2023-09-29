@@ -15,7 +15,8 @@ export default {
     }
   },
   testRegex: /\.test\.js$/.source,
+  transformIgnorePatterns: [],
   transform: {
-    '\\.[jt]sx?$': 'babel-jest'
+    '\\.js$': 'babel-jest'
   }
 };

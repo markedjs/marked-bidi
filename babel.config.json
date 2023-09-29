@@ -1,3 +1,17 @@
 {
-  "presets": ["@babel/preset-env"]
-}
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "12"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "babel-plugin-transform-import-meta",
+      "module:@reactioncommerce/babel-remove-es-create-require",
+      "transform-es2015-modules-commonjs"
+    ]
+  }
