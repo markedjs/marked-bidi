@@ -42,6 +42,8 @@
   "devDependencies": {
     "@babel/core": "^7.23.0",
     "@babel/preset-env": "^7.22.20",
+    "@markedjs/html-differ": "^4.0.2",
+    "@reactioncommerce/babel-remove-es-create-require": "^1.0.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^11.0.0",
     "@semantic-release/git": "^10.0.1",
@@ -49,13 +51,17 @@
     "@semantic-release/npm": "^10.0.5",
     "@semantic-release/release-notes-generator": "^12.0.0",
     "babel-jest": "^29.7.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-plugin-transform-import-meta": "^2.2.1",
     "eslint": "^8.50.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-n": "^16.1.0",
     "eslint-plugin-promise": "^6.1.1",
+    "front-matter": "^4.0.2",
     "jest-cli": "^29.7.0",
     "marked": "^9.0.3",
+    "marked-repo": "https://github.com/markedjs/marked/tarball/v9.0.3",
     "rollup": "^3.29.3",
     "semantic-release": "^22.0.5"
   }
