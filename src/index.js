@@ -2,6 +2,7 @@ import { marked } from 'marked';
 
 export default function() {
   return {
+    useNewRenderer: true,
     renderer: {
       heading(...args) {
         const html = marked.Renderer.prototype.heading.call(this, ...args);
