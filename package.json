@@ -23,7 +23,7 @@
   "scripts": {
     "test": "jest --verbose",
     "test:cover": "jest --coverage",
-    "lint": "eslint .",
+    "lint": "eslint",
     "build": "rollup -c rollup.config.js"
   },
   "repository": {
@@ -42,6 +42,7 @@
   "devDependencies": {
     "@babel/core": "^7.24.9",
     "@babel/preset-env": "^7.25.0",
+    "@markedjs/eslint-config": "1.0.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.0",
     "@semantic-release/git": "^10.0.1",
@@ -49,13 +50,10 @@
     "@semantic-release/npm": "^12.0.1",
     "@semantic-release/release-notes-generator": "^14.0.1",
     "babel-jest": "^29.7.0",
-    "eslint": "^8.57.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-promise": "^6.6.0",
+    "eslint": "^9.8.0",
+    "globals": "^15.9.0",
     "jest-cli": "^29.7.0",
-    "marked": "^13.0.2",
+    "marked": "^13.0.3",
     "rollup": "^4.19.1",
     "semantic-release": "^24.0.0"
   }

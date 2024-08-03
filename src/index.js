@@ -17,7 +17,7 @@ export default function() {
       paragraph(...args) {
         const html = marked.Renderer.prototype.paragraph.call(this, ...args);
         return html.replace(/^<p/, '<p dir="auto"');
-      }
-    }
+      },
+    },
   };
 }
