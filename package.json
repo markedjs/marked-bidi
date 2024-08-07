@@ -1,6 +1,6 @@
 {
   "name": "marked-bidi",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "marked bidirectional text support",
   "main": "./lib/index.cjs",
   "module": "./src/index.js",
