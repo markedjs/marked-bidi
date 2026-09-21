@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@babel/core": "^8.0.5",
-    "@babel/preset-env": "^8.0.5",
+    "@babel/preset-env": "^8.0.6",
     "@markedjs/eslint-config": "^1.0.14",
     "@semantic-release/changelog": "^7.0.0",
     "@semantic-release/commit-analyzer": "^13.0.1",
