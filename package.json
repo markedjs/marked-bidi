@@ -54,7 +54,7 @@
     "globals": "^17.13.0",
     "jest-cli": "^30.5.2",
     "marked": "^18.0.14",
-    "rollup": "^4.63.6",
+    "rollup": "^4.64.5",
     "semantic-release": "^25.0.9"
   }
 }
